@@ -17,7 +17,7 @@ yarn add rn-wheel-selector
 ```js
 import { WheelPickerView } from 'rn-wheel-selector';
 
-<WheelPickerView data={[]} />;
+<WheelPickerView data={[]} onValueChange={(value) => {}} />;
 ```
 
 ## Props
@@ -39,6 +39,7 @@ import { WheelPickerView } from 'rn-wheel-selector';
 | curved                | Curved style                            | boolean                          |
 | itemAlign             | Item text align                         | center \| left \| right          |
 | itemClick             | Item click to select                    | boolean                          |
+| onValueChange         | Value change callback                   | (value: string) => void          |
 
 ## License
 
