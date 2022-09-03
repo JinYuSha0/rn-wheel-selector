@@ -1,6 +1,6 @@
 {
-  "name": "react-native-wheel-picker",
-  "version": "0.0.1",
+  "name": "rn-wheel-selector",
+  "version": "0.1.0",
   "description": "wheel picker for android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -35,18 +35,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JinYuSha0/react-native-wheel-picker",
-    "baseUrl": "https://github.com/JinYuSha0/react-native-wheel-picker"
+    "url": "git+https://github.com/JinYuSha0/rn-wheel-selector",
+    "baseUrl": "https://github.com/JinYuSha0/rn-wheel-selector"
   },
   "author": "Soul Shao <a1009943858@gmail.com> (https://github.com/JinYuSha0)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JinYuSha0/react-native-wheel-picker/issues"
+    "url": "https://github.com/JinYuSha0/rn-wheel-selector/issues"
   },
-  "homepage": "https://github.com/JinYuSha0/react-native-wheel-picker",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "homepage": "https://github.com/JinYuSha0/rn-wheel-selector",
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@babel/eslint-parser": "^7.18.2",
