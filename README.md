@@ -1,4 +1,4 @@
-# react-native-wheel-picker
+# rn-wheel-selector
 
 wheel-picker only Android is supported
 
