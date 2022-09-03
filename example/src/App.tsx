@@ -1,25 +1,35 @@
 import * as React from 'react';
-
 import { StyleSheet, View } from 'react-native';
 import { WheelPickerView } from 'react-native-wheel-picker';
+
+const data = Array.from({ length: 100 }).map((_, index) => ({
+  label: `${index + 1}`,
+  value: `${index + 1}`,
+}));
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <WheelPickerView color="#32a852" style={styles.box} />
+      <WheelPickerView
+        itemClick
+        data={data}
+        style={styles.box}
+        selectedItemTextColor={'red'}
+        visibleItemCount={20}
+        onValueChange={console.log}
+        value={'50'}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: '100%',
+    backgroundColor: '#CCC',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    width: '100%',
+    height: '100%',
   },
 });
