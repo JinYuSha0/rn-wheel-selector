@@ -11,10 +11,10 @@ import com.reactnativewheelpicker.nativeComponent.WheelPicker;
 
 import java.util.List;
 
-public class WheelPickerView extends WheelPicker {
+public class WheelSelector extends WheelPicker {
   public List<String> mValueList;
 
-  public WheelPickerView(ReactContext reactContext) {
+  public WheelSelector(ReactContext reactContext) {
     super(reactContext);
     this.setOnWheelChangeListener(new OnWheelChangeListener() {
       @Override

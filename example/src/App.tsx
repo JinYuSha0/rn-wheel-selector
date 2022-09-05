@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { WheelPickerView } from 'react-native-wheel-picker';
+import { WheelPickerView } from 'rn-wheel-selector';
 
 const data = Array.from({ length: 100 }).map((_, index) => ({
   label: `${index + 1}`,

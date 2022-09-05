@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import type { StyleProp, NativeSyntheticEvent } from 'react-native';
 
-const ComponentName = 'WheelPickerView';
+const ComponentName = 'WheelSelector';
 const LINKING_ERROR = `The package 'react-native-wheel-picker' doesn't seem to be linked`;
 const IOS_ERROR = `${ComponentName} only supports android platform`;
 const IS_ANDROID = Platform.OS === 'android';

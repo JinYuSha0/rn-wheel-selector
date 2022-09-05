@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class WheelPickerPackage implements ReactPackage {
+public class WheelSelectorPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Collections.emptyList();
@@ -17,6 +17,6 @@ public class WheelPickerPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Arrays.<ViewManager>asList(new WheelPickerViewManager());
+        return Arrays.<ViewManager>asList(new WheelSelectorManager());
     }
 }

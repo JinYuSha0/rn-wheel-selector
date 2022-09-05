@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class WheelPickerViewManager extends SimpleViewManager<View> {
-    public static final String REACT_CLASS = "WheelPickerView";
+public class WheelSelectorManager extends SimpleViewManager<View> {
+    public static final String REACT_CLASS = "WheelSelector";
 
     @Override
     @NonNull
@@ -31,11 +31,11 @@ public class WheelPickerViewManager extends SimpleViewManager<View> {
     @Override
     @NonNull
     public View createViewInstance(ThemedReactContext reactContext) {
-        return new WheelPickerView(reactContext);
+        return new WheelSelector(reactContext);
     }
 
     @ReactProp(name = "data")
-    public void setData(WheelPickerView view, ReadableArray data) {
+    public void setData(WheelSelector view, ReadableArray data) {
       List<String> labelList = new ArrayList<String>();
       List<String> valueList = new ArrayList<String>();
       for (int i = 0; i < data.size(); i++) {
@@ -48,67 +48,67 @@ public class WheelPickerViewManager extends SimpleViewManager<View> {
     }
 
     @ReactProp(name = "value")
-    public void setValue(WheelPickerView view, String value) {
+    public void setValue(WheelSelector view, String value) {
       view.setValue(value);
     }
 
     @ReactProp(name = "backgroundColor")
-    public void setBackgroundColor(WheelPickerView view, String color) {
+    public void setBackgroundColor(WheelSelector view, String color) {
       view.setBackgroundColor(Color.parseColor(color));
     }
 
     @ReactProp(name = "visibleItemCount")
-    public void setVisibleItemCount(WheelPickerView view, int count) {
+    public void setVisibleItemCount(WheelSelector view, int count) {
       view.setVisibleItemCount(count);
     }
 
     @ReactProp(name = "cyclic")
-    public void setCyclic(WheelPickerView view, boolean isCyclic) {
+    public void setCyclic(WheelSelector view, boolean isCyclic) {
       view.setCyclic(isCyclic);
     }
 
     @ReactProp(name = "selectedItemTextColor")
-    public void setSelectedItemTextColor(WheelPickerView view, String color) {
+    public void setSelectedItemTextColor(WheelSelector view, String color) {
       view.setSelectedItemTextColor(Color.parseColor(color));
     }
 
     @ReactProp(name = "itemTextColor")
-    public void setItemTextColor(WheelPickerView view, String color) {
+    public void setItemTextColor(WheelSelector view, String color) {
       view.setItemTextColor(Color.parseColor(color));
     }
 
     @ReactProp(name = "itemTextSize")
-    public void setItemTextSize(WheelPickerView view, int size) {
+    public void setItemTextSize(WheelSelector view, int size) {
       view.setItemTextSize(Helper.dp2px(view.getContext(), size));
     }
 
     @ReactProp(name = "itemSpace")
-    public void setItemSpace(WheelPickerView view, int space) {
+    public void setItemSpace(WheelSelector view, int space) {
       view.setItemSpace(Helper.dp2px(view.getContext(), space));
     }
 
     @ReactProp(name = "indicator")
-    public void setIndicator(WheelPickerView view, boolean hasIndicator) {
+    public void setIndicator(WheelSelector view, boolean hasIndicator) {
       view.setIndicator(hasIndicator);
     }
 
     @ReactProp(name = "indicatorSize")
-    public void setIndicatorSize(WheelPickerView view, int size) {
+    public void setIndicatorSize(WheelSelector view, int size) {
       view.setIndicatorSize(Helper.dp2px(view.getContext(), size));
     }
 
     @ReactProp(name = "indicatorColor")
-    public void setIndicatorColor(WheelPickerView view, String color) {
+    public void setIndicatorColor(WheelSelector view, String color) {
       view.setIndicatorColor(Color.parseColor(color));
     }
 
     @ReactProp(name = "curved")
-    public void setCurved(WheelPickerView view, boolean isCurved) {
+    public void setCurved(WheelSelector view, boolean isCurved) {
       view.setCurved(isCurved);
     }
 
     @ReactProp(name = "itemAlign")
-    public void setItemAlign(WheelPickerView view, String itemAlign) {
+    public void setItemAlign(WheelSelector view, String itemAlign) {
       int align = 0;
       switch (itemAlign) {
         case "left":
@@ -124,7 +124,7 @@ public class WheelPickerViewManager extends SimpleViewManager<View> {
     }
 
     @ReactProp(name = "itemClick")
-    public void setItemClick(WheelPickerView view, boolean isItemClick) {
+    public void setItemClick(WheelSelector view, boolean isItemClick) {
       view.setItemClick(isItemClick);
     }
 
